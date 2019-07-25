@@ -3,25 +3,24 @@
   margin: 0;
 }
 div {
-  height: 50px;
+  height: 200px;
   width: 200px;
-  background: red;
-  border: 10px solid;
-  overflow: hidden;
-  transform: scale(1);
-  transition-duration: 1s;
-  transition-timing-function: linear;
-  
-  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid;
+  background: green;
 }
-div:hover {
-  transform: scaleY(100deg)
-  transition-property: height, width;
-  height: 125px;
+
+@media (max-width: 768px) {
+  div {
+    background: yellow;
   }
-section{
-   color: aqua;
 }
-h2:hover{
-   font-size: 30px;
+
+@media (max-width: 480px) {
+  div {
+    background: red;
+  }
 }
